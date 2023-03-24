@@ -1,0 +1,88 @@
+@import url('http://fonts.googeapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sens-serif;
+}
+:root
+{
+    --bg: #152533;
+}
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: var(--bg);
+}
+.card
+{
+    position: relative;
+    transition: 0.5s;
+    height: 100px;
+}
+.card .user
+{
+    position: relative;
+    width: 400px;
+    min-height: 150px;
+    background: #1a92aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 60px 40px 30px;
+}
+.card .user .imgBx
+{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 10;
+}
+.card .user .imgBx img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .user .content
+{
+    position: relative;
+    text-align: center;
+}
+.card .user .content h2
+{
+font-size: 1.2em;
+line-height: 1.05em;
+font-weight: 600;
+color: #fff;
+}
+.card .user .content h2 span
+{
+    font-size: 0.75em;
+    font-weight: 400;
+}
+.card .user .toggle
+{
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 30px;
+    transform: translateY(50%);
+    border: 6px solid var(--bg);
+}
